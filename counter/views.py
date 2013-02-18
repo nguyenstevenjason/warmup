@@ -9,7 +9,7 @@ from django.shortcuts import render_to_response
 from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
-    return render_to_response('client.html', {})
+    return render_to_response('frontend_client.html', {})
 
 def login_view(request):
     try:

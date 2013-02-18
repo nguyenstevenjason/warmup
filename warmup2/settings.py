@@ -1,6 +1,6 @@
 # Django settings for warmup2 project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -20,10 +20,10 @@ DATABASES = {
     }
 }
 
-#import dj_database_url
+import dj_database_url
 import os
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-#DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
